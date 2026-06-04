@@ -18,12 +18,12 @@ spec:
         grafana:
           enabled: true
           adminPassword: "admin"
-      destination:
-        server: 'https://kubernetes.default.svc'
-        namespace: observability
-      syncPolicy:
-        automated:
-          prune: true
-          selfHeal: true
-        syncOptions:
-          - CreateNamespace=true
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: observability
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
